@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';//引入
 import remarkGfm from 'remark-gfm';// 划线、表、任务列表和直接url等的语法扩展
 import rehypeRaw from 'rehype-raw'// 解析标签，支持html语法

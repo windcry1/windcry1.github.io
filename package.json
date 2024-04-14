@@ -46,5 +46,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "homepage": "https://windcry1.com"
+
 }

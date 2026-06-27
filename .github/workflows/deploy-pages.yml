@@ -29,7 +29,10 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        # react-scripts 5 declares a TypeScript 4 peer range, while this legacy
+        # project already locks TypeScript 5. The app is JavaScript-only, so use
+        # the same compatible peer resolution that the existing lockfile expects.
+        run: npm ci --legacy-peer-deps
 
       - name: Run tests
         run: npm test -- --watchAll=false
